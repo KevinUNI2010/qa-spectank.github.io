@@ -23,10 +23,6 @@ body {
   outline: none !important;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 /*
     Theme Name: Spectank
     Theme URI: 
@@ -1781,6 +1777,7 @@ body.lb-disable-scrolling {
 
 .section__imprescindible {
   padding: 35px 0px;
+  overflow-x: hidden;
 }
 .section__imprescindible .section__imprescindible--content {
   width: 320px;
@@ -1942,6 +1939,7 @@ body.lb-disable-scrolling {
 .section__testimonio {
   padding: 45px 0px;
   background-color: #004288;
+  overflow-x: hidden;
 }
 @media (min-width: 900px) {
   .section__testimonio {
@@ -2340,6 +2338,7 @@ body.lb-disable-scrolling {
   position: relative;
   margin-top: -140px;
   background-color: transparent;
+  overflow: hidden;
 }
 @media (min-width: 990px) {
   .section__info {
@@ -2552,7 +2551,7 @@ body.lb-disable-scrolling {
 
 .lb-outerContainer {
   width: 100% !important;
-  margin-top: 30px;
+  margin-top: 90px;
 }
 @media (min-width: 900px) {
   .lb-outerContainer {
@@ -2599,11 +2598,11 @@ body.lb-disable-scrolling {
 }
 .lb-container .lb-nav a.lb-prev {
   background: url(./html/views/images/galeria/prev.svg) no-repeat;
-  width: 13px !important;
+  width: 20px !important;
   height: 40px !important;
   opacity: 1 !important;
   background-size: contain;
-  margin-right: -3px;
+  margin-left: 10px;
 }
 @media (min-width: 900px) {
   .lb-container .lb-nav a.lb-prev {
@@ -2613,10 +2612,11 @@ body.lb-disable-scrolling {
 }
 .lb-container .lb-nav a.lb-next {
   background: url(./html/views/images/galeria/next.svg) no-repeat;
-  width: 13px !important;
+  width: 20px !important;
   height: 40px !important;
   opacity: 1 !important;
   background-size: contain;
+  margin-right: 5px;
 }
 @media (min-width: 900px) {
   .lb-container .lb-nav a.lb-next {
@@ -2633,7 +2633,7 @@ body.lb-disable-scrolling {
   background-size: contain;
   position: absolute !important;
   right: 8px !important;
-  top: 6px !important;
+  top: 66px !important;
 }
 @media (min-width: 900px) {
   .lb-data .lb-close {
@@ -2742,10 +2742,6 @@ body.lb-disable-scrolling {
     display: flex;
   }
 }
-.section__preguntas .section__preguntas--content .section__preguntas--content--body *::-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 4px;
-}
 .section__preguntas .section__preguntas--content .section__preguntas--left {
   margin-bottom: 50px;
 }
@@ -2785,34 +2781,36 @@ body.lb-disable-scrolling {
   color: #ffffff;
   border: 1px solid #004288;
 }
+.section__preguntas .section__preguntas--content *::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 6px;
+  height: 8px;
+}
+.section__preguntas .section__preguntas--content *::-webkit-scrollbar-thumb {
+  background: #004288;
+  border-radius: 4px;
+}
+.section__preguntas .section__preguntas--content *::-webkit-scrollbar-thumb:hover {
+  background: #004288;
+}
+.section__preguntas .section__preguntas--content *::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+.section__preguntas .section__preguntas--content *::-webkit-scrollbar-thumb:active {
+  background-color: #004288;
+}
 .section__preguntas .section__preguntas--content .section__preguntas--right {
-  /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
-  /* Cambiamos el fondo cuando esté en active */
+  overflow-y: scroll;
+  padding-top: 22px;
 }
 @media (min-width: 990px) {
   .section__preguntas .section__preguntas--content .section__preguntas--right {
+    overflow-y: scroll;
     width: 100%;
     padding-top: 15px;
     height: 500px;
-    overflow-y: scroll;
   }
-}
-.section__preguntas .section__preguntas--content .section__preguntas--right *::-webkit-scrollbar {
-  width: 30px; /* Tamaño del scroll en vertical */
-  height: 8px; /* Tamaño del scroll en horizontal */
-  display: none; /* Ocultar scroll */
-}
-.section__preguntas .section__preguntas--content .section__preguntas--right::-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 4px;
-}
-.section__preguntas .section__preguntas--content .section__preguntas--right *::-webkit-scrollbar-thumb:hover {
-  background: #b3b3b3;
-  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-.section__preguntas .section__preguntas--content .section__preguntas--right *::-webkit-scrollbar-thumb:active {
-  background-color: #999999;
 }
 .section__preguntas .section__preguntas--content .section__preguntas--right .section__preguntas--right--content {
   position: relative;
@@ -2859,8 +2857,9 @@ body.lb-disable-scrolling {
     background-color: transparent;
     position: inherit;
     padding: 0px 12px;
-    -webkit-transition: all ease-in 1s;
-    transition: all ease-in 1s;
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
+    opacity: 0;
   }
 }
 .section__preguntas .section__preguntas--content .section__preguntas--right .section__preguntas--card.active {
@@ -2872,8 +2871,7 @@ body.lb-disable-scrolling {
   .section__preguntas .section__preguntas--content .section__preguntas--right .section__preguntas--card.active {
     top: auto;
     visibility: visible;
-    -webkit-transition: all ease-in 1s;
-    transition: all ease-in 1s;
+    opacity: 1;
   }
 }
 @media (min-width: 990px) {
