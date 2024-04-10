@@ -83,7 +83,7 @@ var swiper__clientes = new Swiper(".section__clientes--swiper", {
     spaceBetween: 0,
     loop: true,
     autoplay: {
-        delay: 1000,
+        delay: 800,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
@@ -113,11 +113,12 @@ var swiper__clientes = new Swiper(".section__clientes--swiper", {
     },
 });
 
-// nuestros clientes
+// nuestros antesdespues
 var swiper__antesdespues = new Swiper(".section__antesdespues--swiper", {
     grabCursor: true,
     slidesPerView: 1,
     spaceBetween: 20,
+    loop: true,
     pagination: {
         clickable: true,
         el: ".section__antesdespues--swiper .swiper-pagination__general",
@@ -125,6 +126,82 @@ var swiper__antesdespues = new Swiper(".section__antesdespues--swiper", {
     navigation: {
         nextEl: ".section__antesdespues--swiper .swiper-button-next__general",
         prevEl: ".section__antesdespues--swiper .swiper-button-prev__general",
+    },
+});
+
+// producto disponibles
+var swiper__antesdespues = new Swiper(".section__disponibles--card--swiper", {
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        clickable: true,
+        el: ".section__disponibles--card--swiper .swiper-pagination__general",
+    },
+    breakpoints: {
+        900: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    },
+});
+
+// card
+var swiper__coleccion = new Swiper(".swiper__coleccion--empresa", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    spaceBetween: 0,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 0,
+    },
+    pagination: {
+        clickable: true,
+        el: ".swiper-pagination__coleccion",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next__coleccion",
+        prevEl: ".swiper-button-prev__coleccion",
+    },
+    breakpoints: {
+        600: {
+            effect: "none",
+            centeredSlides: false,
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        900: {
+            effect: "none",
+            centeredSlides: false,
+            slidesPerView: 3,
+            spaceBetween: 0,
+        },
+    },
+});
+
+// producto ph
+// producto disponibles
+var swiper__disponibleph = new Swiper(".section__disponibles--ph--swiper", {
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        clickable: true,
+        el: ".section__disponibles--ph--swiper .swiper-pagination__general",
+    },
+    breakpoints: {
+        900: {
+            slidesPerView: 2,
+        },
     },
 });
 
@@ -211,4 +288,10 @@ collapseList.forEach((collapse) => {
             ImagenPrincipal.classList.add("active");
         });
     });
+});
+
+//
+lightbox.option({
+    resizeDuration: 100,
+    wrapAround: true,
 });
