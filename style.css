@@ -2907,7 +2907,7 @@ body.lb-disable-scrolling {
 
 .section__preguntas {
   position: relative;
-  padding-top: 100px;
+  padding-top: 95px;
 }
 @media (min-width: 990px) {
   .section__preguntas {
@@ -2915,7 +2915,7 @@ body.lb-disable-scrolling {
   }
 }
 .section__preguntas .section__preguntas--titulo {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 @media (min-width: 990px) {
   .section__preguntas .section__preguntas--titulo {
@@ -2956,7 +2956,7 @@ body.lb-disable-scrolling {
   }
 }
 .section__preguntas .section__preguntas--content .section__preguntas--left {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media (min-width: 990px) {
   .section__preguntas .section__preguntas--content .section__preguntas--left {
@@ -2966,7 +2966,7 @@ body.lb-disable-scrolling {
 }
 .section__preguntas .section__preguntas--content .section__preguntas--left .section__preguntas--left--button {
   width: 100%;
-  height: 48px;
+  height: 46px;
   border: 1px solid #00a7e1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2982,11 +2982,13 @@ body.lb-disable-scrolling {
   border-radius: 170px;
   font-weight: 500;
   font-size: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 @media (min-width: 990px) {
   .section__preguntas .section__preguntas--content .section__preguntas--left .section__preguntas--left--button {
     font-size: 17.5px;
+    height: 48px;
+    margin-bottom: 15px;
   }
 }
 .section__preguntas .section__preguntas--content .section__preguntas--left .section__preguntas--left--button.active {
@@ -3750,4 +3752,8 @@ body.lb-disable-scrolling {
 }
 .enlace-whatsapp__content.enlace-whatsapp__content_v2 path {
   fill: #ffffff;
+}
+
+body.open-galeria {
+  overflow: hidden;
 }
