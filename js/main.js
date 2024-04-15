@@ -295,3 +295,19 @@ lightbox.option({
     resizeDuration: 100,
     wrapAround: true,
 });
+
+//
+$(".gallery a").on("click", function (e) {
+    e.preventDefault();
+    console.log("click galeria");
+    document.body.classList.add("open-galeria");
+});
+
+setTimeout(() => {
+    console.log("Retrasado por 1 segundo.");
+    $(".lightbox").on("click", function (e) {
+        // e.preventDefault();
+        console.log("click lightbox");
+        document.body.classList.remove("open-galeria");
+    });
+}, "1000");
