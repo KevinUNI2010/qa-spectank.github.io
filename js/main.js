@@ -28,11 +28,12 @@ header__espacio.addEventListener("click", (e) => {
 });
 
 // card
-var swiper__coleccion = new Swiper(".swiper__coleccion", {
+var swiper__coleccion = new Swiper(".swiper__coleccion__home", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 3,
+    loop: true,
     spaceBetween: 0,
     coverflowEffect: {
         rotate: 0,
@@ -78,36 +79,72 @@ var swiper__coleccion = new Swiper(".swiper__coleccion", {
 
 // nuestros clientes
 var swiper__clientes = new Swiper(".section__clientes--swiper", {
-    grabCursor: true,
-    slidesPerView: 3,
+    // grabCursor: true,
+    // slidesPerView: 3,
+    // spaceBetween: 0,
+    // loop: true,
+    // autoplay: {
+    //     delay: 500,
+    //     disableOnInteraction: false,
+    //     pauseOnMouseEnter: true,
+    // },
+
+    // breakpoints: {
+    //     480: {
+    //         slidesPerView: 4,
+    //     },
+    //     600: {
+    //         slidesPerView: 5,
+    //     },
+    //     720: {
+    //         slidesPerView: 6,
+    //     },
+    //     840: {
+    //         slidesPerView: 7,
+    //     },
+    //     960: {
+    //         slidesPerView: 8,
+    //     },
+    //     1050: {
+    //         slidesPerView: 6,
+    //     },
+    //     1225: {
+    //         slidesPerView: 7,
+    //     },
+    // },
+
     spaceBetween: 0,
-    loop: true,
+    centeredSlides: true,
+    speed: 1000,
     autoplay: {
-        delay: 800,
+        delay: 0,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
-
+    loop: true,
+    // slidesPerView: "auto",
+    slidesPerView: 2.5,
+    allowTouchMove: true,
+    disableOnInteraction: true,
+    pauseOnMouseEnter: true,
     breakpoints: {
-        480: {
-            slidesPerView: 4,
-        },
         600: {
-            slidesPerView: 5,
+            slidesPerView: 3,
         },
         720: {
-            slidesPerView: 6,
+            slidesPerView: 4,
         },
         840: {
-            slidesPerView: 7,
+            slidesPerView: 5,
         },
         960: {
-            slidesPerView: 8,
-        },
-        1050: {
             slidesPerView: 6,
         },
-        1225: {
+        1100: {
+            slidesPerView: 7,
+        },
+
+        1280: {
             slidesPerView: 7,
         },
     },
@@ -152,11 +189,12 @@ var swiper__antesdespues = new Swiper(".section__disponibles--card--swiper", {
 });
 
 // card
-var swiper__coleccion = new Swiper(".swiper__coleccion--empresa", {
+var swiper__coleccion__empresa = new Swiper(".swiper__coleccion--empresa", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 3,
+    // loop: true,
     spaceBetween: 0,
     coverflowEffect: {
         rotate: 0,
@@ -164,13 +202,14 @@ var swiper__coleccion = new Swiper(".swiper__coleccion--empresa", {
         depth: 0,
         modifier: 0,
     },
+
     pagination: {
         clickable: true,
-        el: ".swiper-pagination__coleccion",
+        el: ".swiper__coleccion--empresa .swiper-pagination__coleccion",
     },
     navigation: {
-        nextEl: ".swiper-button-next__coleccion",
-        prevEl: ".swiper-button-prev__coleccion",
+        nextEl: ".swiper__coleccion--empresa .swiper-button-next__coleccion",
+        prevEl: ".swiper__coleccion--empresa .swiper-button-prev__coleccion",
     },
     breakpoints: {
         600: {
