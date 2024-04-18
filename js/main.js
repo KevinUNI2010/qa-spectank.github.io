@@ -344,7 +344,7 @@ $(".gallery a").on("click", function (e) {
 
 setTimeout(() => {
     console.log("Retrasado por 1 segundo.");
-    $(".lightbox").on("click", function (e) {
+    $(".lightboxOverlay").on("click", function (e) {
         // e.preventDefault();
         console.log("click lightbox");
         document.body.classList.remove("open-galeria");
