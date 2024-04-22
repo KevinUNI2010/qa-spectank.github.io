@@ -115,7 +115,7 @@ var swiper__clientes = new Swiper(".section__clientes--swiper", {
 
     spaceBetween: 0,
     centeredSlides: true,
-    speed: 1000,
+    speed: 1300,
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
