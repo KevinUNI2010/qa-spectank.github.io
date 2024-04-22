@@ -2852,7 +2852,7 @@ body.lb-disable-scrolling {
   .lb-outerContainer {
     width: 835px !important;
     height: 627px !important;
-    margin-top: 80px;
+    margin-top: 35px;
   }
 }
 .lb-outerContainer img {
@@ -2956,6 +2956,12 @@ body.lb-disable-scrolling {
   }
 }
 
+@media (min-width: 900px) {
+  .lb-data {
+    position: relative !important;
+  }
+}
+
 .lb-data .lb-close {
   background: url(./html/views/images/galeria/close.svg) no-repeat;
   width: 15px !important;
@@ -2972,6 +2978,8 @@ body.lb-disable-scrolling {
     top: 50px !important;
     width: 18px !important;
     height: 18px !important;
+    top: -660px !important;
+    right: -25px !important;
   }
 }
 
