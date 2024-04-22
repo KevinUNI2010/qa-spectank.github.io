@@ -1768,6 +1768,41 @@ body.lb-disable-scrolling {
   margin: 0 auto;
 }
 
+.contador {
+  font-size: 30px;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+.ocultar {
+  opacity: 0;
+}
+
+.animar {
+  -webkit-animation: aparecer 3s;
+          animation: aparecer 3s;
+  opacity: 1;
+}
+
 .section__utensilios {
   padding: 70px 0px;
 }
@@ -2056,6 +2091,12 @@ body.lb-disable-scrolling {
 @media (min-width: 1100px) {
   .section__imprescindible .section__imprescindible--body--2 .titulo__general {
     width: 450px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 1100px) {
+  .section__imprescindible .section__imprescindible--body--2 .section__imprescindible--left {
+    width: 500px;
   }
 }
 @media (min-width: 900px) {
