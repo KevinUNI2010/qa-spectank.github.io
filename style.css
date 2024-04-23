@@ -3901,6 +3901,9 @@ body.lb-disable-scrolling {
           align-items: center;
   cursor: pointer;
 }
+.enlace-whatsapp__content .enlace-whatsapp__right span {
+  margin-top: 3px;
+}
 .enlace-whatsapp__content .enlace-whatsapp__left {
   position: absolute;
   height: 81px;
