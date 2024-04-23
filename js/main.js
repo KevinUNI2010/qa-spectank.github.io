@@ -349,6 +349,11 @@ setTimeout(() => {
         console.log("click lightbox");
         document.body.classList.remove("open-galeria");
     });
+    $(".lightbox").on("click", function (e) {
+        // e.preventDefault();
+        console.log("click lightbox");
+        document.body.classList.remove("open-galeria");
+    });
 
     $(".lb-close").on("click", function (e) {
         // e.preventDefault();
