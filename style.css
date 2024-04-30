@@ -3947,52 +3947,27 @@ body.lb-disable-scrolling {
   width: 0px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-.enlace-whatsapp__content .enlace-whatsapp__left p {
-  font-size: 13px;
-  font-weight: 700;
   color: #ffffff;
-  text-align: center;
-  margin-bottom: 8px;
-  white-space: nowrap;
-  opacity: 0;
-}
-.enlace-whatsapp__content .enlace-whatsapp__left a {
-  color: #004288;
-  width: 205px;
-  height: 31px;
-  background-color: #ffffff;
-  text-align: center;
-  font-weight: 500;
-  font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 200px;
-  text-decoration: none;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.enlace-whatsapp__content .enlace-whatsapp__left a:hover {
   font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 18px;
+  padding-right: 18px;
+}
+.enlace-whatsapp__content .enlace-whatsapp__left span {
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
 }
 .enlace-whatsapp__content:hover .enlace-whatsapp__left {
   opacity: 1;
   visibility: visible;
   width: 290px;
 }
-.enlace-whatsapp__content:hover .enlace-whatsapp__left p {
+.enlace-whatsapp__content:hover .enlace-whatsapp__left span {
+  width: auto;
   opacity: 1;
-}
-.enlace-whatsapp__content:hover .enlace-whatsapp__left a {
-  opacity: 1;
+  visibility: visible;
 }
 .enlace-whatsapp__content:hover .enlace-whatsapp__right {
   z-index: 1231231 !important;
@@ -4413,15 +4388,22 @@ body.open-galeria {
   border-radius: 200px;
   text-decoration: none;
   padding: 12px 35px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (min-width: 993px) {
   .youtube__enlace--link {
     width: 338px;
   }
+}
+.youtube__enlace--link:hover {
+  color: #004288;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .youtube__enlace--link .youtube__enlace--icono {
   margin-left: 20px;
