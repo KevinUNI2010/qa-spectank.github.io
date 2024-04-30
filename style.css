@@ -702,7 +702,7 @@ body.lb-disable-scrolling {
 }
 .footer .footer__content--redes {
   position: absolute;
-  top: -100px;
+  top: -144px;
   right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,11 +1005,15 @@ body.lb-disable-scrolling {
     margin: 0;
     margin-bottom: 5px;
   }
+  .header__enlaces .header__enlaces--link {
+    display: none !important;
+  }
   .header__enlaces.header__enlaces-active .header__enlaces--link {
     display: block;
     padding: 15px 0px 15px 50px;
     font-size: 14px;
     font-weight: 500;
+    display: inline-block !important;
   }
   .header__body {
     padding-left: 27px;
@@ -4144,24 +4148,54 @@ body.open-galeria {
 }
 @media (min-width: 900px) {
   .section-formulario {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
   }
 }
 
 .section-formulario .wpcf7 {
-  width: 300px;
+  width: 320px;
 }
 
 .section-formulario .wpcf7 form span input {
   width: 100%;
   height: 30px;
-  margin-bottom: 25px;
   padding-left: 0;
   border: none;
   border-bottom: 2px solid #004288;
   color: #004288 !important;
   font-weight: 500;
   font-size: 14px;
+}
+@media (min-width: 900px) {
+  .section-formulario .wpcf7 form span input {
+    font-size: 18px;
+  }
+}
+
+.section-formulario .wpcf7 form .form__item {
+  margin-bottom: 25px;
+}
+
+.section-formulario .wpcf7 form span input::-webkit-input-placeholder, .section-formulario .wpcf7 form span textarea::-webkit-input-placeholder {
+  color: #939393;
+}
+
+.section-formulario .wpcf7 form span input::-moz-placeholder, .section-formulario .wpcf7 form span textarea::-moz-placeholder {
+  color: #939393;
+}
+
+.section-formulario .wpcf7 form span input:-ms-input-placeholder, .section-formulario .wpcf7 form span textarea:-ms-input-placeholder {
+  color: #939393;
+}
+
+.section-formulario .wpcf7 form span input::-ms-input-placeholder, .section-formulario .wpcf7 form span textarea::-ms-input-placeholder {
+  color: #939393;
+}
+
+.section-formulario .wpcf7 form span input::placeholder,
+.section-formulario .wpcf7 form span textarea::placeholder {
+  color: #939393;
 }
 
 .section-formulario .etiqueta-contact {
@@ -4199,7 +4233,12 @@ body.open-galeria {
 }
 
 .section-formulario .wpcf7 form .aceptacion-content:nth-of-type(2) {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+@media (min-width: 900px) {
+  .section-formulario .wpcf7 form .aceptacion-content:nth-of-type(2) {
+    margin-top: 25px;
+  }
 }
 
 .section-formulario .wpcf7 form .aceptacion-content .input-condiciones {
@@ -4209,9 +4248,25 @@ body.open-galeria {
   border-radius: 0;
 }
 
+.section-formulario .wpcf7 form .wpcf7-not-valid-tip {
+  font-size: 11px;
+}
+
+.section-formulario .wpcf7 form .aceptacion-content .wpcf7-not-valid-tip {
+  position: absolute;
+  width: 279px;
+  top: 20px;
+  font-size: 11px;
+}
+
+.section-formulario .wpcf7 form .aceptacion-content .wpcf7-acceptance {
+  border-bottom: none !important;
+}
+
 .section-formulario .wpcf7 form .aceptacion-content .wpcf7-list-item {
   width: auto;
   margin-right: 12px;
+  margin-left: -2px;
 }
 
 .section-formulario .wpcf7 form .aceptacion-content .wpcf7-form-control-wrap {
@@ -4338,4 +4393,93 @@ body.open-galeria {
 
 .screen-reader-response {
   display: none;
+}
+
+.youtube__enlace--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #00a7e1;
+  border-radius: 200px;
+  text-decoration: none;
+  padding: 12px 35px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 993px) {
+  .youtube__enlace--link {
+    width: 338px;
+  }
+}
+.youtube__enlace--link .youtube__enlace--icono {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.youtube__enlace--link .youtube__enlace--icono svg {
+  width: 70px;
+  height: auto;
+}
+
+.youtube__enlace--galeria .youtube__enlace--content {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media (min-width: 993px) {
+  .youtube__enlace--galeria .youtube__enlace--content {
+    padding-left: 0px;
+  }
+}
+.youtube__enlace--galeria .youtube__enlace--content .youtube__enlace--link {
+  padding: 12px 25px;
+}
+
+.youtube__enlace--content {
+  margin-top: 35px;
+}
+@media (min-width: 993px) {
+  .youtube__enlace--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 428px;
+  }
+}
+
+.youtube__enlace--certificados {
+  margin-top: 30px;
+}
+.youtube__enlace--certificados .youtube__enlace--content {
+  margin-bottom: 10px;
+}
+@media (min-width: 993px) {
+  .youtube__enlace--certificados {
+    margin-top: 40px;
+  }
+}
+.youtube__enlace--certificados .youtube__enlace--link {
+  padding: 11px 45px !important;
+}
+.youtube__enlace--certificados .youtube__enlace--icono svg {
+  width: 27px;
 }
