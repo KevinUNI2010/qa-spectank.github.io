@@ -1004,6 +1004,9 @@ body.lb-disable-scrolling {
     margin: 0;
     margin-bottom: 5px;
   }
+  .header__enlaces .header__enlaces--link {
+    display: none;
+  }
   .header__enlaces.header__enlaces-active .header__enlaces--link {
     display: block;
     padding: 15px 0px 15px 50px;
