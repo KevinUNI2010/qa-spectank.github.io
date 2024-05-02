@@ -4498,6 +4498,13 @@ body.open-galeria {
     padding: 14px 45px !important;
   }
 }
+.youtube__enlace--certificados .youtube__enlace--link path {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.youtube__enlace--certificados .youtube__enlace--link:hover path {
+  fill: #004288;
+}
 .youtube__enlace--certificados .youtube__enlace--icono svg {
   width: 27px;
 }
