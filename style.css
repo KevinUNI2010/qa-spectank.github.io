@@ -2870,6 +2870,7 @@ body.lb-disable-scrolling {
 .lb-outerContainer {
   width: 100% !important;
   margin-top: 90px;
+  background-color: transparent;
 }
 @media (min-width: 900px) {
   .lb-outerContainer {
@@ -2885,6 +2886,7 @@ body.lb-disable-scrolling {
      object-fit: cover !important;
   height: auto !important;
   border-radius: 0px !important;
+  opacity: 1 !important;
 }
 @media (min-width: 900px) {
   .lb-outerContainer img {
